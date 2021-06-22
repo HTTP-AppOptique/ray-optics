@@ -1,0 +1,278 @@
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  /* Remove the outline and shadow when button is focused. */
+  outline: none;
+  box-shadow: none;
+}
+.btn-group {
+  /* Make button group wrappable. */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.btn-static {
+  cursor: default !important;
+}
+.btn-group > .btn {
+  /* Make btn in btn-group won't extend the height of container. */
+  margin-bottom: 0;
+  /* Remove smooth edge */
+  border-radius: 0;
+}
+.btn-group-toggle > .btn {
+  /* Remove smooth edge */
+  border-radius: 0;
+  border: 0;
+  /* Fill to parent. */
+  height: 100%;
+}
+input[type="radio"] {
+  /* Make native radio act as the same as bootstrap's radio. */
+  display: none;
+}
+input[type="checkbox"] {
+  /* Make native checkbox act as the same as bootstrap's checkbox. */
+  display: none;
+}
+#setAttrAll {
+  display: inline;
+}
+.dropdown-toggle {
+  /* Fix dropdown-menu overlapped by checked radio */
+  /*z-index: 1060 !important;*/
+  position: absolute;
+  display: block;
+}
+span {
+  vertical-align: middle;
+}
+input[type="text"] {
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* Prevent popover flickering when space is not enough */
+.popover { pointer-events: none; }
+
+input[type="button"] {
+  margin: 1px;
+}
+
+input[type="range"] {
+  height:15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.toolbtn {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-style:none;
+  background-color:rgb(230,230,230);
+  outline: none;
+  line-height: 110%;
+}
+
+.toolbtn:hover {
+  border-style:none;
+  background-color:rgb(200,200,200);
+  outline: none;
+  line-height: 110%;
+}
+
+.toolbtnwithlisthover {
+  border-style:none;
+  background-color:rgb(215,215,215);
+  outline: none;
+  line-height: 110%;
+}
+
+.toolbtnselected {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-style:none;
+  background-color:rgb(192,192,192);
+  outline: none;
+  line-height: 110%;
+}
+
+.toollistbox {
+  background-color:rgb(215,215,215);
+  font-size:12pt;
+  position:absolute;
+  padding-right: 1px;
+  line-height:1;
+}
+
+.toollistbtn {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-style:none;
+  background-color:rgb(215,215,215);
+  outline: none;
+  line-height: 110%;
+  width:100%;
+  text-align:left;
+}
+
+.toollistbtn:hover {
+  border-style:none;
+  background-color:rgb(168,168,168);
+  outline: none;
+  line-height: 110%;
+  width:100%;
+  text-align:left;
+}
+
+.toollistbtnselected {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-style:none;
+  background-color:rgb(168,168,168);
+  outline: none;
+  line-height: 110%;
+  width:100%;
+  text-align:left;
+}
+
+.mainbox {
+  background-color:white;
+  font-size:12pt;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-bottom: 4px;
+  padding-right: 1px;
+  margin: 0px;
+}
+
+.saveBox {
+  background-color:white;
+  font-size:12pt;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  margin: 0px;
+}
+
+
+.settingsbox {
+  background-color:rgb(90,90,90);
+  color:white;
+  opacity:0.8;
+  font-size:12pt;
+  padding: 1px;
+  margin: 0px;
+}
+
+.forcestopbox {
+  background-color:red;
+  color:white;
+  opacity:0.8;
+  font-size:12pt;
+}
+
+.optionsbar {
+  margin-left:5px;
+  margin-top:2px;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+/* Lateral panel to group */
+
+#sideMultipleGroup {
+  position: relative;
+  display: block;
+  margin: auto;
+  overflow: auto;
+  width: 30%;
+  height: 40%;
+}
+
+.hidePanel {
+  animation: hideP 0.7s ease-in-out forwards;
+}
+
+.showPanel {
+  animation: showP 0.7s ease-in-out forwards;
+}
+
+#elementInGr {
+  position: relative;
+  display: block;
+  margin: auto;
+  overflow: auto;
+  width: 30%;
+  height: 40%;
+}
+
+#sideMultipleGroup table, #elementInGr table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+}
+
+#sideMultipleGroup thead tr, #elementInGr thead tr {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#sideMultipleGroup tbody tr {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#elementInGr tbody tr {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+}
+
+#sideMultipleGroup tbody td {
+  height: 50px;
+  width: 33.33%;
+  border: 1px solid black;
+  background-color: rgb(223, 223, 223);
+}
+
+#elementInGr tbody td {
+  height: 25px;
+  width: 33.33%;
+  border: 1px solid black;
+  background-color: rgb(223, 223, 223);
+}
+
+#sideMultipleGroup tbody button {
+  width: 80%;
+  height: 60%;
+}
+
+input[type="radio"][name="multipleGr"] {
+  display: block;
+  margin: auto;
+}
+
+@keyframes hideP {
+  from {
+      right: -35%;
+  } to {
+      right: -65%;
+  }
+}
+
+@keyframes showP {
+  from {
+      right: -65%;
+  } to {
+      right: -35%;
+  }
+}
